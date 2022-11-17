@@ -81,6 +81,6 @@ print.ResetTest <- function(test) {
   cat("Ramsey RESET Test\n" ,
       "Test Statistic =" , test$test_statistic , "\n" ,
       "P-Value =" , test$p_value  , '\n',
-      "H0 : The model is correctly specified.")
+      "H0 : The model is correctly specified." , '\n')
 }
 

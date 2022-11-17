@@ -77,5 +77,5 @@ print.ChowTest <- function(x) {
   cat("Chow Test for Structural Break\n" ,
       "Test Statistic =" , x$test_statistic , "\n" ,
       "P-Value =" , x$p_value  , '\n',
-      "H0 : There is no structural break.")
+      "H0 : There is no structural break." , '\n')
 }

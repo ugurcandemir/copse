@@ -10,3 +10,12 @@ copse aims to bring the most cutting edge statistical methods into one centraliz
 ### License: GPL-3
 
 ### Maintainer : Uğurcan Demir , ugur.can.demir@hotmail.com
+
+### Download :
+
+```
+install.packages("devtools")
+
+library(devtools)
+install_github("ugurcandemir/copse")
+```
