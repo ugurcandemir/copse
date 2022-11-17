@@ -17,7 +17,7 @@ ChowTest(model, n1, n2 = NULL)
 The Chow Test statistic and the associated p-value.
 }
 \description{
-ChowTest function applies Chow Structural Change test to 'lm' and 'glm' objects.
+ChowTest() function applies Chow Structural Change test to 'lm' and 'glm' objects.
 }
 \examples{
 y <- c(5*rnorm(30 , 100 , 5 ) + 60 , 2*rnorm(20 , 100 , 5)+20)
