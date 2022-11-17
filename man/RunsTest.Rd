@@ -17,3 +17,14 @@ Wald–Wolfowitz runs test results , the associated p-value or the critical valu
 \description{
 Generic function for Wald–Wolfowitz runs test.
 }
+\examples{
+ch_vec <- sample(x = c("John" , "Jane" ) , size = 30 , replace = TRUE , prob = c(40 , 60))
+RunsTest(ch_vec)
+
+fac_vec <- as.factor(sample(x = c("John" , "Jane" ) , size = 30 , replace = TRUE , prob = c(40 , 60)))
+RunsTest(fac_vec)
+
+num_vec <- round(rnorm(n = 30 , mean = 100 , sd = 10 ))
+RunsTest(num_vec)
+
+}

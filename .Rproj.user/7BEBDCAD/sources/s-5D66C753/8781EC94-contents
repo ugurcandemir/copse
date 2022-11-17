@@ -7,6 +7,16 @@
 #' @param x A 'numeric' , 'character 'or 'factor' object.
 #' @param ... Additional arguments.
 #'
+#' @examples
+#' ch_vec <- sample(x = c("John" , "Jane" ) , size = 30 , replace = TRUE , prob = c(40 , 60))
+#' RunsTest(ch_vec)
+#'
+#' fac_vec <- as.factor(sample(x = c("John" , "Jane" ) , size = 30 , replace = TRUE , prob = c(40 , 60)))
+#' RunsTest(fac_vec)
+#'
+#' num_vec <- round(rnorm(n = 30 , mean = 100 , sd = 10 ))
+#' RunsTest(num_vec)
+#'
 #' @return Wald–Wolfowitz runs test results , the associated p-value or the critical values.
 #'
 #' @export
@@ -26,6 +36,10 @@ RunsTest <- function(x , ...) {
 #' @param alpha The level of significance. It is used only in small sample (exact) test , since for large sample tests (asymptotic) p-value will be provided.
 #' @param alternative The tail of the test. "two.sided" , "greater" and "less" are available.
 #' @param exact If TRUE exact critical values will be used  otherwise normal approximation will be returned. By default , if both n1 and n2 are smaller than or equal to 20 it is considered a small sample and the exact values will be used.
+#'
+#' @examples
+#' num_vec <- round(rnorm(n = 30 , mean = 100 , sd = 10 ))
+#' RunsTest(num_vec)
 #'
 #' @return Wald–Wolfowitz runs test results , the associated p-value or the critical values.
 #'
@@ -158,6 +172,10 @@ RunsTest.numeric <- function(x  ,
 #' @param alternative The tail of the test. "two.sided" , "greater" and "less" are available.
 #' @param exact If TRUE exact critical values will be used  otherwise normal approximation will be returned. By default , if both n1 and n2 are smaller than or equal to 20 it is considered a small sample and the exact values will be used.
 #'
+#' @examples
+#' ch_vec <- sample(x = c("John" , "Jane" ) , size = 30 , replace = TRUE , prob = c(40 , 60))
+#' RunsTest(ch_vec)
+#'
 #' @return Wald–Wolfowitz runs test results , the associated p-value or the critical values.
 #'
 #' @export
@@ -271,6 +289,10 @@ RunsTest.character <- function(x  ,
 #' @param alpha The level of significance. It is used only in small sample (exact) test , since for large sample tests (asymptotic) p-value will be provided.
 #' @param alternative The tail of the test. "two.sided" , "greater" and "less" are available.
 #' @param exact If TRUE exact critical values will be used  otherwise normal approximation will be returned. By default , if both n1 and n2 are smaller than or equal to 20 it is considered a small sample and the exact values will be used.
+#'
+#' @examples
+#' fac_vec <- as.factor(sample(x = c("John" , "Jane" ) , size = 30 , replace = TRUE , prob = c(40 , 60)))
+#' RunsTest(fac_vec)
 #'
 #' @return Wald–Wolfowitz runs test results , the associated p-value or the critical values.
 #'

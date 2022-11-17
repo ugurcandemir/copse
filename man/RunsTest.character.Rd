@@ -26,3 +26,8 @@ Wald–Wolfowitz runs test results , the associated p-value or the critical valu
 \description{
 RunsTest Method for 'character' class.
 }
+\examples{
+ch_vec <- sample(x = c("John" , "Jane" ) , size = 30 , replace = TRUE , prob = c(40 , 60))
+RunsTest(ch_vec)
+
+}

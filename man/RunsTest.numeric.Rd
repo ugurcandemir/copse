@@ -29,3 +29,8 @@ Wald–Wolfowitz runs test results , the associated p-value or the critical valu
 \description{
 RunsTest Method for 'numeric' class.
 }
+\examples{
+num_vec <- round(rnorm(n = 30 , mean = 100 , sd = 10 ))
+RunsTest(num_vec)
+
+}
