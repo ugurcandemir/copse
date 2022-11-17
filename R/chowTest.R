@@ -2,7 +2,7 @@
 #' Chow Test for Structural Change
 #'
 #' @description
-#' ChowTest function applies Chow Structural Change test to 'lm' and 'glm' objects.
+#' ChowTest() function applies Chow Structural Change test to 'lm' and 'glm' objects.
 #'
 #' @param model An 'lm' or 'glm' object.
 #' @param n1 The number of rows of the first part of the model until the suspected breakpoint.
