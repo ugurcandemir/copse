@@ -7,7 +7,7 @@
 ChowTest(model, n1, n2 = NULL)
 }
 \arguments{
-\item{model}{An 'lm' or 'glm object'.}
+\item{model}{An 'lm' or 'glm' object.}
 
 \item{n1}{The number of rows of the first part of the model until the suspected breakpoint.}
 
@@ -25,4 +25,8 @@ x <- 5*rnorm(50 , 100 , 5 ) + 20
 model1 <- lm(y ~ x)
 ChowTest(model = model1 , n1 = 30)
 ChowTest(model = model1 , n1 = 30 , n2 = 20)
+
+}
+\references{
+{Chow, G. C. (1960). Tests of equality between sets of coefficients in two linear regressions. Econometrica: Journal of the Econometric Society, 591-605.}
 }
