@@ -10,6 +10,8 @@
 #'
 #' @return The Chow Test statistic and the associated p-value.
 #'
+#' @importFrom stats lm pf
+#'
 #' @examples
 #' y <- c(5*rnorm(30 , 100 , 5 ) + 60 , 2*rnorm(20 , 100 , 5)+20)
 #' x <- 5*rnorm(50 , 100 , 5 ) + 20
